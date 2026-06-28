@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Companies hiring their next great team">
+  <rect width="400" height="240" rx="18" fill="#eaf1fa"/>
+  <!-- ground line -->
+  <rect x="36" y="196" width="328" height="6" rx="3" fill="#c3d6ee"/>
+  <!-- building left -->
+  <rect x="74" y="104" width="76" height="92" rx="6" fill="#0353a4"/>
+  <rect x="86" y="118" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="112" y="118" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="86" y="144" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="112" y="144" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="86" y="170" width="42" height="26" rx="2" fill="#9fc0e8"/>
+  <!-- building center (tall) -->
+  <rect x="162" y="66" width="80" height="130" rx="6" fill="#023e8a"/>
+  <rect x="176" y="82" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="202" y="82" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="176" y="108" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="202" y="108" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="176" y="134" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="202" y="134" width="16" height="16" rx="2" fill="#cfe0f7"/>
+  <rect x="186" y="162" width="32" height="34" rx="2" fill="#9fc0e8"/>
+  <!-- building right -->
+  <rect x="254" y="126" width="72" height="70" rx="6" fill="#02356f"/>
+  <rect x="266" y="140" width="14" height="14" rx="2" fill="#cfe0f7"/>
+  <rect x="290" y="140" width="14" height="14" rx="2" fill="#cfe0f7"/>
+  <rect x="266" y="166" width="38" height="30" rx="2" fill="#9fc0e8"/>
+  <!-- little egg/sun accent -->
+  <circle cx="300" cy="70" r="18" fill="#f4b63f"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Candidates stepping into their next chapter">
+  <rect width="400" height="240" rx="18" fill="#eaf1fa"/>
+  <!-- ground line -->
+  <rect x="36" y="196" width="328" height="6" rx="3" fill="#c3d6ee"/>
+  <!-- open doorway (next chapter) -->
+  <rect x="232" y="78" width="96" height="118" rx="6" fill="#0353a4"/>
+  <rect x="244" y="90" width="72" height="106" rx="4" fill="#cfe0f7"/>
+  <path d="M244 90 H316 V196 H280 Z" fill="#9fc0e8"/>
+  <circle cx="305" cy="146" r="4" fill="#023e8a"/>
+  <!-- upward growth arrow -->
+  <path d="M250 150 L272 124 L264 124 L264 100 L280 100 L280 124 L294 124 Z" fill="#f4b63f"/>
+  <!-- person walking forward -->
+  <circle cx="132" cy="92" r="24" fill="#023e8a"/>
+  <path d="M104 196 C104 152 160 152 160 196 Z" fill="#023e8a"/>
+  <!-- briefcase -->
+  <rect x="150" y="150" width="40" height="30" rx="4" fill="#02356f"/>
+  <rect x="162" y="142" width="16" height="10" rx="2" fill="#02356f"/>
+  <rect x="150" y="162" width="40" height="4" fill="#9fc0e8"/>
+</svg>
