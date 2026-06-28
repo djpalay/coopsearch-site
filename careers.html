@@ -38,12 +38,16 @@
 
     <section class="section jobs-section">
       <div class="container">
-        <div id="jobsRoot" class="job-list" aria-live="polite">
-          <p class="jobs-loading">Loading open positions…</p>
+        <div class="jobs-embed">
+          <iframe
+            src="https://coop-search-group.app.loxo.co/coop-search-group?disable_addthis=true"
+            title="Coop Search Group open positions"
+            loading="lazy"
+            frameborder="0"></iframe>
         </div>
         <p class="jobs-fallback">
-          Prefer the full board?
-          <a href="https://coop-search-group.app.loxo.co/coop-search-group" target="_blank" rel="noopener">Open our Loxo careers page →</a>
+          Trouble viewing the list?
+          <a href="https://coop-search-group.app.loxo.co/coop-search-group" target="_blank" rel="noopener">Open our careers page in a new tab →</a>
         </p>
       </div>
     </section>
@@ -65,42 +69,5 @@
     links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
   </script>
 
-  <script>
-    (async function () {
-      const root = document.getElementById('jobsRoot');
-      const BASE = 'https://coop-search-group.app.loxo.co/coop-search-group';
-      const esc = s => (s == null ? '' : String(s)).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-      const loc = j => {
-        const parts = [j.city, j.state, (j.country && j.country.name) || j.country].filter(Boolean);
-        return parts.length ? parts.join(', ') : (j.location || j.remote_work_allowed && 'Remote' || j.macro_address || '');
-      };
-      const jobUrl = j => j.url || j.published_url || (BASE + '/jobs/' + j.id);
-      try {
-        const res = await fetch('/api/jobs');
-        if (!res.ok) throw new Error('http ' + res.status);
-        const data = await res.json();
-        let jobs = Array.isArray(data) ? data : (data.results || data.jobs || data.data || []);
-        jobs = jobs.filter(j => j.published === true || j.published_at || j.job_board_published);
-        if (!jobs.length) {
-          root.innerHTML = '<p class="jobs-empty">No open positions right now — check back soon, or reach out anytime.</p>';
-          return;
-        }
-        root.innerHTML = jobs.map(j => {
-          const type = (j.job_type && j.job_type.name) || (j.category && j.category.name) || '';
-          const l = loc(j);
-          return '<a class="job-card" href="' + esc(jobUrl(j)) + '" target="_blank" rel="noopener">'
-            + '<div class="job-main"><h3>' + esc(j.title || 'Open role') + '</h3>'
-            + '<div class="job-meta">'
-            + (l ? '<span>' + esc(l) + '</span>' : '')
-            + (type ? '<span>' + esc(type) + '</span>' : '')
-            + '</div></div>'
-            + '<span class="job-cta">View &amp; apply →</span></a>';
-        }).join('');
-      } catch (e) {
-        root.innerHTML = '<p class="jobs-empty">We couldn\'t load the live list right now. '
-          + '<a href="' + BASE + '" target="_blank" rel="noopener">View our careers page →</a></p>';
-      }
-    })();
-  </script>
 </body>
 </html>
