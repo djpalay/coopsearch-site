@@ -41,6 +41,8 @@ a { color: inherit; text-decoration: none; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; }
 .brand-mark { font-size: 1.3rem; }
 .brand-name { font-family: 'Fraunces', serif; }
+.brand-logo { height: 26px; width: auto; max-width: 60vw; display: block; }
+@media (max-width: 480px) { .brand-logo { height: 20px; } }
 .nav-links { display: flex; align-items: center; gap: 28px; }
 .nav-links a { font-size: 0.95rem; font-weight: 500; color: var(--ink-soft); transition: color .15s; }
 .nav-links a:hover { color: var(--ink); }
