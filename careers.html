@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers — Coop Search Group</title>
+  <meta name="description" content="Explore open roles with Coop Search Group. Find your next opportunity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html#home" class="brand">
+        <img src="logo.svg" alt="Coop Search Group" class="brand-logo" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#about">About</a>
+        <a href="index.html#approach">Approach</a>
+        <a href="index.html#who">Who we help</a>
+        <a href="careers.html" class="active">Careers</a>
+        <a href="index.html#contact" class="btn btn-small">Start your search</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Careers</p>
+        <h1>Open positions</h1>
+        <p class="lead">Browse our current openings below. See a role that fits? Apply directly — we'd love to meet you.</p>
+      </div>
+    </section>
+
+    <section class="section jobs-section">
+      <div class="container">
+        <div class="jobs-embed">
+          <iframe
+            src="https://coop-search-group.app.loxo.co/coop-search-group?disable_addthis=true"
+            title="Coop Search Group open positions"
+            loading="lazy"
+            frameborder="0"></iframe>
+        </div>
+        <p class="jobs-fallback">
+          Trouble viewing the list?
+          <a href="https://coop-search-group.app.loxo.co/coop-search-group" target="_blank" rel="noopener">Open our careers page in a new tab →</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Coop Search Group</span>
+      <span>© <span id="year"></span> Coop Search Group LLC. All rights reserved.</span>
+      <a href="index.html#home">Back to home ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
+  </script>
+</body>
+</html>
