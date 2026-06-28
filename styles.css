@@ -61,6 +61,13 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-ghost:hover { background: var(--bg-alt); border-color: var(--gold); transform: translateY(-2px); }
 
+/* White CTA button in the nav bar */
+.nav-links .btn {
+  background: #ffffff; color: var(--gold);
+  border: 1.5px solid var(--gold); box-shadow: none;
+}
+.nav-links .btn:hover { background: var(--gold); color: #ffffff; }
+
 /* HERO */
 .hero {
   background: radial-gradient(900px 500px at 70% -10%, #fff9e6 0%, rgba(255,255,255,0) 60%), var(--bg);
