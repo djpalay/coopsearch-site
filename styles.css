@@ -176,6 +176,15 @@ a { color: inherit; text-decoration: none; }
 }
 .page-hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.1rem); font-weight: 600; margin-bottom: 16px; }
 .page-hero .lead { max-width: 600px; }
+.callout-cta {
+  display: inline-flex; align-items: center; gap: 14px; margin-top: 26px;
+  background: #fff9e6; border: 1px solid #f0e4bf; border-radius: 999px;
+  padding: 14px 24px; color: var(--ink); font-size: 1rem;
+  transition: transform .15s, box-shadow .15s, border-color .15s;
+}
+.callout-cta strong { color: var(--gold-deep); font-weight: 600; }
+.callout-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(2, 62, 138, 0.12); border-color: var(--gold); }
+.callout-arrow { color: var(--gold); font-weight: 700; }
 .jobs-section { padding-top: 36px; }
 .jobs-embed {
   background: #ffffff; border: 1px solid #edf0f5; border-radius: var(--radius);
