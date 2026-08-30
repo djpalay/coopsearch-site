@@ -65,6 +65,8 @@ a { color: inherit; text-decoration: none; }
 /* SECTIONS */
 .section { padding: 104px 0; }
 .section-divider { border-top: 1px solid var(--line); }
+.section-alt { background: var(--cream); }
+.section-alt .expertise-col { border-top-color: #efe6c8; }
 .section-head { max-width: 720px; margin-bottom: 56px; }
 .section-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); margin-bottom: 18px; }
 .section-sub { color: var(--ink-soft); font-size: 1.08rem; }
