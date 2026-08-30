@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expertise | Coop Search Group</title>
+  <meta name="description" content="The sales roles Coop Search Group places, from the front line to the C-suite." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand">
+        <img src="logo.svg" alt="Coop Search Group" class="brand-logo" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/about">About</a>
+        <a href="/expertise" class="active">Expertise</a>
+        <a href="/placements">Placements</a>
+        <a href="/careers">Careers</a>
+        <a href="/contact" class="btn btn-small">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Our expertise</p>
+        <h1>Sales roles we place, from the front line to the C-suite</h1>
+        <p class="lead">We recruit across the entire revenue organization.</p>
+      </div>
+    </section>
+
+    <section id="expertise" class="section">
+      <div class="container">
+        <div class="expertise-grid">
+          <div class="expertise-col">
+            <h3>Sales Leadership</h3>
+            <p>CRO · VP of Sales · Head of Sales · Sales Director · Regional Sales Manager</p>
+          </div>
+          <div class="expertise-col">
+            <h3>Account Executives</h3>
+            <p>Enterprise · Mid-Market · SMB · Strategic Accounts · Named Accounts</p>
+          </div>
+          <div class="expertise-col">
+            <h3>Sales Development</h3>
+            <p>SDR · BDR · SDR / BDR Manager · Outbound · Pipeline Generation</p>
+          </div>
+          <div class="expertise-col">
+            <h3>Revenue &amp; GTM Support</h3>
+            <p>Sales Engineering · Solutions Consulting · Revenue Operations · Sales Enablement · Customer Success</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container contact-inner">
+        <div class="section-head">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Looking to hire in one of these areas?</h2>
+          <p class="section-sub">Tell us what you're looking for and let's build something together.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-contact" href="/contact">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Coop Search Group</span>
+      <span>© <span id="year"></span> Coop Search Group LLC. All rights reserved.</span>
+      <a href="/">Back to home ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
+  </script>
+</body>
+</html>

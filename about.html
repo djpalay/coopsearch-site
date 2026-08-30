@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Coop Search Group</title>
+  <meta name="description" content="About Coop Search Group — a sales-focused recruiting firm building matches that go beyond the résumé." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand">
+        <img src="logo.svg" alt="Coop Search Group" class="brand-logo" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/about" class="active">About</a>
+        <a href="/expertise">Expertise</a>
+        <a href="/placements">Placements</a>
+        <a href="/careers">Careers</a>
+        <a href="/contact" class="btn btn-small">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">About us</p>
+        <h1>The right fit changes everything</h1>
+        <p class="lead">We're a sales-focused recruiting firm dedicated to connecting exceptional talent with the right opportunities.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="grid-2-head">
+          <p class="eyebrow">Our story</p>
+          <h2>Connections that go beyond the résumé</h2>
+        </div>
+        <div class="grid-2-body">
+          <p>Whether you're a company searching for your next great hire or a candidate ready for your next chapter, we're here to make the match. We specialize in sales talent, from front-line reps to revenue leadership.</p>
+          <p>We build meaningful connections that go beyond the résumé. Skills and experience matter, but so do ambition, values, and fit. That's the difference between filling a seat and finding the right person.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="section section-dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our approach</p>
+          <h2>How we work</h2>
+          <p class="section-sub">A search process designed around real connection, not transactions.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Understand</h3>
+              <p>We start by learning what success really looks like: the role, the team, the culture, and the qualities that matter beyond the job description.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Search</h3>
+              <p>We tap our network and dig deeper than a keyword match, surfacing candidates who fit the mission as well as the requirements.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Match</h3>
+              <p>We make introductions built to last, connections that change companies and careers for the better.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container contact-inner">
+        <div class="section-head">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Ready to start your search?</h2>
+          <p class="section-sub">Tell us what you're looking for and let's build something together.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-contact" href="/contact">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Coop Search Group</span>
+      <span>© <span id="year"></span> Coop Search Group LLC. All rights reserved.</span>
+      <a href="/">Back to home ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
+  </script>
+</body>
+</html>

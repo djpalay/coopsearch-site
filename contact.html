@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Careers | Coop Search Group</title>
-  <meta name="description" content="Explore open roles with Coop Search Group. Find your next opportunity." />
+  <title>Contact | Coop Search Group</title>
+  <meta name="description" content="Get in touch with Coop Search Group — email, call, or connect on LinkedIn." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,8 +20,8 @@
         <a href="/about">About</a>
         <a href="/expertise">Expertise</a>
         <a href="/placements">Placements</a>
-        <a href="/careers" class="active">Careers</a>
-        <a href="/contact" class="btn btn-small">Contact</a>
+        <a href="/careers">Careers</a>
+        <a href="/contact" class="btn btn-small active">Contact</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
     </div>
@@ -30,36 +30,17 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Careers</p>
-        <h1>Open positions</h1>
-        <p class="lead">Browse our current openings below. See a role that fits? Apply directly. We'd love to meet you.</p>
-        <p class="callout-lead">Don't see a fit for you?</p>
-        <a href="#contact" class="btn">See more opportunities</a>
+        <p class="eyebrow">Get in touch</p>
+        <h1>Let's build your team</h1>
+        <p class="lead">Whether you're hiring or exploring your next role, we'd love to hear from you. Reach out any way you like.</p>
       </div>
     </section>
 
-    <section class="section jobs-section">
-      <div class="container">
-        <div class="jobs-embed">
-          <iframe
-            src="https://coop-search-group.app.loxo.co/coop-search-group?disable_addthis=true"
-            title="Coop Search Group open positions"
-            loading="lazy"
-            frameborder="0"></iframe>
-        </div>
-        <p class="jobs-fallback">
-          Trouble viewing the list?
-          <a href="https://coop-search-group.app.loxo.co/coop-search-group" target="_blank" rel="noopener">Open our careers page in a new tab →</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
     <section id="contact" class="section section-cta">
       <div class="container contact-inner">
         <div class="section-head">
-          <p class="eyebrow">Get in touch</p>
-          <h2>Ready to start your search?</h2>
+          <p class="eyebrow">Reach us</p>
+          <h2>Start the conversation</h2>
           <p class="section-sub">Tell us what you're looking for and let's build something together.</p>
         </div>
         <div class="contact-actions">
@@ -95,6 +76,5 @@
     toggle.addEventListener('click', () => links.classList.toggle('open'));
     links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
   </script>
-
 </body>
 </html>

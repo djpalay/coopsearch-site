@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recent Placements | Coop Search Group</title>
+  <meta name="description" content="A sample of sales searches Coop Search Group has delivered, plus what partners say." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand">
+        <img src="logo.svg" alt="Coop Search Group" class="brand-logo" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="/about">About</a>
+        <a href="/expertise">Expertise</a>
+        <a href="/placements" class="active">Placements</a>
+        <a href="/careers">Careers</a>
+        <a href="/contact" class="btn btn-small">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Recent placements</p>
+        <h1>Searches we've delivered</h1>
+        <p class="lead">A sample of roles we've filled. <em>(Replace with your real placements — anonymized examples work well.)</em></p>
+      </div>
+    </section>
+
+    <section id="placements" class="section">
+      <div class="container">
+        <div class="placements">
+          <article class="placement">
+            <h3>[Role Title, e.g. VP of Sales]</h3>
+            <p>[One or two sentences on the company, the mandate, and the outcome. Example: A high-growth SaaS company needed a revenue leader to build its enterprise motion; we placed a VP who doubled pipeline in two quarters.]</p>
+          </article>
+          <article class="placement">
+            <h3>[Role Title]</h3>
+            <p>[Short description of the search and result.]</p>
+          </article>
+          <article class="placement">
+            <h3>[Role Title]</h3>
+            <p>[Short description of the search and result.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Testimonials</p>
+          <h2>What partners say</h2>
+          <p class="section-sub"><em>(Add real quotes from your clients and candidates.)</em></p>
+        </div>
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>[Add a client or candidate testimonial here — what it was like to work with you, and the result.]</blockquote>
+            <figcaption><strong>[Name]</strong><span>[Title, Company]</span></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>[Add another testimonial here.]</blockquote>
+            <figcaption><strong>[Name]</strong><span>[Title, Company]</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container contact-inner">
+        <div class="section-head">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Ready to start your search?</h2>
+          <p class="section-sub">Tell us what you're looking for and let's build something together.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-contact" href="/contact">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">Coop Search Group</span>
+      <span>© <span id="year"></span> Coop Search Group LLC. All rights reserved.</span>
+      <a href="/">Back to home ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.addEventListener('click', e => { if (e.target.tagName === 'A') links.classList.remove('open'); });
+  </script>
+</body>
+</html>
