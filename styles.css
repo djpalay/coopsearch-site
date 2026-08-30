@@ -143,6 +143,7 @@ a { color: inherit; text-decoration: none; }
   font-family: 'Fraunces', serif; font-size: 1.35rem; line-height: 1.4; font-weight: 400;
   color: var(--ink); margin-bottom: 22px;
 }
+.quote blockquote:last-child { margin-bottom: 0; }
 .quote figcaption { display: flex; flex-direction: column; gap: 2px; }
 .quote figcaption strong { font-weight: 600; }
 .quote figcaption span { color: var(--ink-soft); font-size: 0.95rem; }
