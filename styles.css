@@ -55,8 +55,8 @@ a { color: inherit; text-decoration: none; }
 .hero {
   padding: 128px 0 108px;
   background:
-    radial-gradient(720px 400px at 88% -10%, rgba(2, 62, 138, 0.12) 0%, rgba(2, 62, 138, 0) 60%),
-    linear-gradient(180deg, #fdf3d4 0%, #ffffff 100%);
+    radial-gradient(760px 420px at 88% -10%, rgba(2, 62, 138, 0.04) 0%, rgba(2, 62, 138, 0) 60%),
+    linear-gradient(180deg, #fffdf4 0%, #ffffff 100%);
   border-bottom: 1px solid var(--line);
 }
 .hero-inner { max-width: 900px; }
