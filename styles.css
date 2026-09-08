@@ -158,6 +158,11 @@ a { color: inherit; text-decoration: none; }
 #founders .section-head h2::after { display: none; }
 .founders { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
 .founder-photo { width: 150px; height: 150px; object-fit: cover; border-radius: var(--radius); display: block; margin-bottom: 20px; }
+.founder-name { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+.founder-name h3 { margin-bottom: 0; }
+.founder-linkedin { display: inline-flex; color: var(--brand); transition: color .15s; }
+.founder-linkedin svg { width: 20px; height: 20px; }
+.founder-linkedin:hover { color: var(--brand-deep); }
 .founder h3 { font-size: 1.5rem; margin-bottom: 4px; }
 .founders .founder-role { color: var(--brand); font-weight: 600; font-size: 0.95rem; margin-bottom: 14px; }
 .founder p { color: var(--ink-soft); max-width: 46ch; }
