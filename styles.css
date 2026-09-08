@@ -150,7 +150,11 @@ a { color: inherit; text-decoration: none; }
 .quote figcaption strong { font-weight: 600; }
 .quote figcaption span { color: var(--ink-soft); font-size: 0.95rem; }
 
+/* Divider between two adjacent blue sections (About: approach + contact) */
+.section-dark + .section-cta { border-top: 1px solid rgba(255, 255, 255, 0.22); }
+
 /* FOUNDERS */
+#founders .section-head { max-width: none; }
 .founders { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
 .founder-photo { width: 150px; height: 150px; object-fit: cover; border-radius: var(--radius); display: block; margin-bottom: 20px; }
 .founder h3 { font-size: 1.5rem; margin-bottom: 4px; }
