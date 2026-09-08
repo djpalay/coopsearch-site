@@ -105,6 +105,7 @@ a { color: inherit; text-decoration: none; }
 .grid-2-body p:last-child { margin-bottom: 0; }
 
 /* EXPERTISE */
+#expertise { padding-top: 32px; }
 .expertise-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 64px; }
 .expertise-col { border-top: 1px solid var(--line); padding: 28px 0 32px; }
 .expertise-col h3 { font-size: 1.4rem; margin-bottom: 10px; }
