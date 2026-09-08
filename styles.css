@@ -155,6 +155,7 @@ a { color: inherit; text-decoration: none; }
 
 /* FOUNDERS */
 #founders .section-head { max-width: none; text-align: left; }
+#founders .section-head h2 { display: inline-block; }
 #founders .section-head h2::after { margin: 22px auto 0; }
 .founders { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
 .founder-photo { width: 150px; height: 150px; object-fit: cover; border-radius: var(--radius); display: block; margin-bottom: 20px; }
